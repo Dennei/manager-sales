@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "page/component/index/index",
+    "page/component/analyse/analyse",
+    "page/component/search/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "进销存",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "page/component/index/index",
+        "iconPath": "image/biaodan-xian.png",
+        "selectedIconPath": "image/biaodan-mian.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/component/analyse/analyse",
+        "iconPath": "image/zhoubao-xian.png",
+        "selectedIconPath": "image/zhoubao-mian.png",
+        "text": "分析"
+      },
+      {
+        "pagePath": "page/component/search/index",
+        "iconPath": "image/renshi-xian.png",
+        "selectedIconPath": "image/renshi-mian.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,65 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="section">
+            <view class="flex-wrp" style="flex-direction:column;">
+                <view class="flex-item" style="background: #F4F4F4">
+                    <view class="flex-chiled-top" style="background:#FFC125">
+                        <view class="flex-wrp-top" style="flex-direction:column;">
+                            <view class="flex-item-top">
+                                  <view class="flex-item-top-child">
+                                      <text class="top-title">今日销售金额（元）</text> <image class=" top-icon" src="../../../image/kejian.png" ></image>
+                                  </view>
+                            </view>
+                            <view class="flex-item-top" >
+                                  <view class="flex-item-top-child">
+                                      <text class='money-today'>6666.00</text>
+                                  </view>
+                            </view>
+                            <view class="flex-item-top">
+                                  <view class="flex-item-top-child">
+                                      交易1单 
+                                  </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="flex-item" style="background: #F4F4F4">
+                    <view class="flex-chiled" style="background: white">
+                          <view class="category">
+                              <view class="category_item" wx:for="{{iconArray}}">
+                                  <view class="category_item_wrap">
+                                        <view class="icon_wrap">
+                                             <image src="{{item.iconUrl}}" class="index_icon"></image>
+                                        </view>
+                                        <view class="category_item_text">
+                                              <text>{{item.iconText}}</text>
+                                        </view>
+                                    </view>
+                              </view>
+                            </view>
+                    </view>
+                </view>
+                <view class="flex-item" style="background: #F4F4F4">
+                    <view class="flex-chiled" style="background: white;flex-direction:column;" >
+                        <view class="bottom-title">收款情况</view>
+                          <view class="bottom-broke">
+                              <view class="bottom_item" wx:for="{{itemArray}}">
+                                  <view class="bottom_item_wrap" style="display:flex;flex-direction:row;">
+                                        <view class="bottom-icon-wrap">
+                                             <image src="{{item.itemUrl}}" class="bottom-index_icon"></image>
+                                        </view>
+                                        <view class="bottom_item_text">
+                                              <text>{{item.itemText}}</text>
+                                        </view>
+                                        <view class="bottom_item_text_money">
+                                              <text>{{item.itemMoney}}</text>
+                                        </view>
+                                    </view>
+                              </view>
+                            </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
